@@ -1,4 +1,7 @@
 package biblio;
+/**
+Les livres
+*/
 public class Livre{
 	String ref;
 	String titre;
@@ -13,6 +16,7 @@ public class Livre{
 	public void 	setTitre(String titre){ this.titre = titre;}
 	public boolean  equals	(Object o){	return this.ref==((Livre)o).ref;	}
 	public void 	affiche	()	{ System.out.println(ref+" "+titre);	}
-	public int 	hashCode(){	return ref.hashCode();	}
+	public int 	hashCode()
+		{	return ref.hashCode();	}
 
 }
